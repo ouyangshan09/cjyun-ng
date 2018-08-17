@@ -7,8 +7,9 @@
   </label>
 </div>
 <ul class="heroes">
-    <li *ngFor="let hero of heros">
+    <li *ngFor="let hero of heros" (click)="onSelect(hero)">
       <span class="badge">{{hero.id}}</span>
       <span>{{hero.name}}</span>
     </li>
 </ul>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
