@@ -3,5 +3,6 @@
 */
 
 export const RoutePath = {
-    HEORS: 'heroes'
+    HEORS: 'heroes',
+    DASHBOARD: 'dashboard'
 }
