@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../modules/hero';
 import { HeroService } from '../../service/hero.service';
+import { RoutePath } from '../../constant/route.constant';
 
 @Component({
   selector: 'app-heros',
@@ -8,23 +9,13 @@ import { HeroService } from '../../service/hero.service';
   styleUrls: ['./heros.component.css']
 })
 export class HerosComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
-
   heros: Array<Hero>;
-  selectedHero: Hero;
+  routePath = RoutePath;
 
   getHeros (): void {
     this.heorService.getHeros()
       .subscribe(heroes => this.heros = heroes);
     console.log('heros:', this.heros);
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    console.log('hero:', hero);
   }
 
   constructor(private heorService: HeroService) { }

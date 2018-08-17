@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../modules/hero';
 import { HeroService } from '../../service/hero.service';
+import { RoutePath } from '../../constant/route.constant';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,6 +10,7 @@ import { HeroService } from '../../service/hero.service';
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
+  routePath = RoutePath;
 
   constructor(private heroService: HeroService) { }
 
