@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -17,10 +17,14 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
   <nav>
-    <a routerLink="/heros">Heros</a>
+    <a routerLink="/{{RoutePath.HEORS}}">Heros</a>
   </nav>
   <router-outlet></router-outlet>
   <app-message></app-message>
-  <!-- <app-heros></app-heros> -->
-</ul>
-
+</ul> -->
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/{{RoutePath.HEORS}}">Heros</a>
+</nav>
+<router-outlet></router-outlet>
+<app-message></app-message>
