@@ -39,6 +39,41 @@
     > main {
         .big-data {
             height: 612px;
+            background-image: url('../../../assets/img/titleBg.png');
+            background-size: cover;
+        }
+
+        .product-list {
+            height: 620px;
+            background-color: #f9fcfc;
+        }
+
+        .cjcms-feature {
+            height: 778px;
+            background-image: url('../../../assets//img/cjcmsBg.png');
+            background-size: cover;
+        }
+
+        .cjwisdom-feature {
+            height: 795px;
+            background-image: url('../../../assets/img/cjwisdomBg.png');
+            background-size: cover;
+        }
+
+        .cjhms-feature {
+            height: 800px;
+            background-color: #fbfbfb;
+        }
+
+        .cjtlis-feature {
+            height: 800px;
+            background-color: #eaf2f8;
+        }
+
+        .cjhsc-feature {
+            height: 800px;
+            background-image: url('../../../assets/img/cjhscBg.png');
+            background-size: cover;
         }
     }
 
@@ -55,7 +90,7 @@
             margin-right: auto;
         }
 
-        > main > section {
+        > main .container {
             width: 1127px;
             margin: 0 auto;
         }
