@@ -38,9 +38,36 @@
 
     > main {
         .big-data {
-            height: 612px;
             background-image: url('../../../assets/img/titleBg.png');
             background-size: cover;
+
+            .container {
+                height: 612px;
+            }
+
+            .title {
+                position: absolute;
+                top: 251px;
+                left: 190px;
+                color: #fff;
+                font-size: 44px;
+            }
+
+            .sub-title {
+                position: absolute;
+                top: 332px;
+                left: 190px;
+                color: #fff;
+                font-size: 18px;
+            }
+
+            .title-img1 {
+                position: absolute;
+                right: 0;
+                top: 100px;
+                background-image: url('../../../assets/img/title-img.png');
+                background-size: contain;
+            }
         }
 
         .product-list {
@@ -78,7 +105,11 @@
     }
 
     > footer {
-        //
+        height: 280px;
+        background: #151b25;
+        color: #778497;
+        font-size: 14px;
+        padding-top: 14px;
     }
 }
 
@@ -93,6 +124,7 @@
         > main .container {
             width: 1127px;
             margin: 0 auto;
+            position: relative;
         }
 
         > footer > section {
