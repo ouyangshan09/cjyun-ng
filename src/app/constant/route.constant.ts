@@ -7,5 +7,6 @@ export const RoutePath = {
     DASHBOARD: 'dashboard',
     HOME: '',
     ADMIN: 'admin',
-    SCHOOL: 'school'
+    SCHOOL: 'school',
+    LAST: '**'
 }
