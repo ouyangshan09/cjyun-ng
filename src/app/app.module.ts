@@ -11,6 +11,7 @@ import { HeroDetailComponent } from './components/hero-detail/hero-detail.compon
 import { AdminRoutingModule } from './routes/admin/admin-routing.module';
 import { SchoolRoutingModule } from './routes/school/school-routing.module';
 import { HomeComponent } from './routes/home/home.component';
+import { NotfountComponent } from './components/notfount/notfount.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './routes/home/home.component';
     MessageComponent,
     DashboardComponent,
     HeroDetailComponent,
-    HomeComponent
+    HomeComponent,
+    NotfountComponent
   ],
   imports: [
     BrowserModule,
