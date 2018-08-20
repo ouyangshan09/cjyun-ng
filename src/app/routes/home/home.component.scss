@@ -73,6 +73,18 @@
         .product-list {
             height: 620px;
             background-color: #f9fcfc;
+            padding: 70px 0;
+            text-align: center;
+
+            .title {
+                color: #132a52;
+                font-size: 34px;
+            }
+
+            .sub-title {
+                color: #4c648d;
+                font-size: 18px;
+            }
         }
 
         .cjcms-feature {
