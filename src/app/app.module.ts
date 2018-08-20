@@ -9,6 +9,7 @@ import { MessageComponent } from './components/message/message.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { AdminRoutingModule } from './routes/admin/admin-routing.module';
+import { SchoolRoutingModule } from './routes/school/school-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AdminRoutingModule } from './routes/admin/admin-routing.module';
     BrowserModule,
     FormsModule,
     AdminRoutingModule,
+    SchoolRoutingModule,
     AppRoutingModule
   ],
   providers: [],
