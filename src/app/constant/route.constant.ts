@@ -4,5 +4,7 @@
 
 export const RoutePath = {
     HEORS: 'heroes',
-    DASHBOARD: 'dashboard'
+    DASHBOARD: 'dashboard',
+    ADMIN: 'admin',
+    SCHOOL: 'school'
 }
