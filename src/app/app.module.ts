@@ -8,6 +8,7 @@ import { HerosComponent } from './components/heros/heros.component';
 import { MessageComponent } from './components/message/message.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { AdminRoutingModule } from './routes/admin/admin-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HeroDetailComponent } from './components/hero-detail/hero-detail.compon
   imports: [
     BrowserModule,
     FormsModule,
+    AdminRoutingModule,
     AppRoutingModule
   ],
   providers: [],
