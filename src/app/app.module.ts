@@ -10,6 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { AdminRoutingModule } from './routes/admin/admin-routing.module';
 import { SchoolRoutingModule } from './routes/school/school-routing.module';
+import { HomeComponent } from './routes/home/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SchoolRoutingModule } from './routes/school/school-routing.module';
     HerosComponent,
     MessageComponent,
     DashboardComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
