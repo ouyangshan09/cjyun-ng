@@ -85,6 +85,16 @@
                 color: #4c648d;
                 font-size: 18px;
             }
+
+            .list {
+                margin-top: 50px;
+
+                .product-item {
+                    display: inline-block;
+                    width: 20%;
+                    padding: 0 5px;
+                }
+            }
         }
 
         .cjcms-feature {
