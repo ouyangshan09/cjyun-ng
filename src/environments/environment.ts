@@ -9,7 +9,7 @@ export const environment = {
     age: 24,
     protocal: 'https'
   },
-  api: 'www.baidu.com'
+  api: 'www.baidu.com1'
 };
 
 /*
