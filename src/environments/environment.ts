@@ -2,14 +2,41 @@
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
   production: false,
+  name: 'cjyun',
   config: {
-    name: 'ouyang',
-    age: 24,
-    protocal: 'https'
+    cjyun: {
+      title: 'e采云平台',
+      short_title: '云平台',
+      api: '',
+      host: '',
+      // https: '' option
+    },
+    cjhms: {
+      title: 'e采课业系统',
+      short_title: '课业系统',
+      api: '',
+      host: ''
+    },
+    cjtilis: {
+      title: 'e采学情系统',
+      short_title: '学情系统',
+      api: '',
+      host: ''
+    },
+    cjcms: {
+      title: 'e采备课系统',
+      short_title: '备课系统',
+      api: '',
+      host: ''
+    }
   },
-  api: 'www.baidu.com1'
+  protocal: 'https',
+  api: 'test-cjyun.ecain.com',
+  host: 'cjyun.oy.ecain.com',
+  needLogin: true
 };
 
 /*
