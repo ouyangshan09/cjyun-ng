@@ -94,9 +94,47 @@
                     width: 20%;
                     padding: 0 5px;
 
-                    ::ng-deep .ant-card-body {
-                        padding: 81px 24px;
+                    .cjcms {
+                        border-top: 7px solid #f49b1e;
                     }
+
+                    .cjwisdom {
+                        border-top: 7px solid #128ee9;
+                    }
+
+                    .cjhms {
+                        border-top: 7px solid #5cad01;
+                    }
+
+                    .cjtlis {
+                        border-top: 7px solid #2b5075;
+                    }
+
+                    .cjhsc {
+                        border-top: 7px solid #19b1f0;
+                    }
+
+                    ::ng-deep {
+                        .ant-card {
+                            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+                            &:hover {
+                                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                                transform: translateY(-10px);
+                            }
+                        }
+
+                        .ant-card-body {
+                            padding: 81px 24px;
+
+                            > p {
+                                margin-top: 20px;
+                                font-size: 16px;
+                                color: #5d7399;
+                            }
+                        }
+                    }
+
                 }
             }
         }
