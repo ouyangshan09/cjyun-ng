@@ -93,6 +93,10 @@
                     display: inline-block;
                     width: 20%;
                     padding: 0 5px;
+
+                    ::ng-deep .ant-card-body {
+                        padding: 81px 24px;
+                    }
                 }
             }
         }
