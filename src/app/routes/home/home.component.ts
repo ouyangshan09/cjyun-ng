@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from '../../service/home.service';
+import { Config } from '../../modules/config.module';
 
 
 @Component({
@@ -10,12 +11,15 @@ import { HomeService } from '../../service/home.service';
 export class HomeComponent implements OnInit {
   logoHover: string;
 
+  navList: Array<Config> = [];
+
   constructor(
     private homeService: HomeService
   ) { }
 
   ngOnInit() {
-    this.homeService.getNavigations();
+    this.navList = this.homeService.getNavigations();
+    console.log('this.navList:', this.navList);
   }
 
 }

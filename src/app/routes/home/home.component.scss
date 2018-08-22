@@ -36,6 +36,39 @@
 
             .menu {
                 float: right;
+
+                .ant-menu {
+                    line-height: 60px;
+                    color: #fff;
+                    background: transparent;
+                    border-bottom: 1px solid transparent;
+
+                    .ant-menu-item-selected {
+                        color: #1aaff2;
+                        border-bottom: 2px solid transparent;
+                    }
+
+                    .ant-menu-item {
+                        > a {
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            color: #1aaff2;
+                            border-bottom: 2px solid transparent;
+                        }
+                    }
+                }
+
+                ::ng-deep {
+                    .anticon {
+                        margin-right: 0;
+                    }
+                }
+
+                .ant-menu-vertical.ant-menu-sub {
+                    max-width: unset;
+                }
             }
         }
 

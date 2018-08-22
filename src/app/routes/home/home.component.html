@@ -4,7 +4,21 @@
       <nav class="logo">
         <a class="skip {{logoHover}}" href="/"></a>
       </nav>
-      <nav class="menu">Menu List</nav>
+      <nav class="menu">
+        <ul nz-menu [nzMode]="'horizontal'">
+          <li nz-menu-item *ngFor="let item of navList">
+            <a href="https://{{item.host}}" target="_blank">{{item['short_title']}}</a>
+          </li>
+          <li nz-submenu class="user-option">
+            <span title><nz-avatar nzSize="large" nzIcon="anticon anticon-user"></nz-avatar></span>
+            <ul>
+              <li nz-menu-item>4</li>
+              <li nz-menu-item>5</li>
+              <li nz-menu-item>6</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
