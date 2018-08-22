@@ -50,11 +50,15 @@
 
                     .ant-menu-item {
                         > a {
+                            transition: all 0.3s;
                             color: #fff;
+
+                            &:hover {
+                                color: #1aaff2;
+                            }
                         }
 
                         &:hover {
-                            color: #1aaff2;
                             border-bottom: 2px solid transparent;
                         }
                     }

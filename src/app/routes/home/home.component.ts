@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.navList = this.homeService.getNavigations();
-    console.log('this.navList:', this.navList);
   }
 
 }

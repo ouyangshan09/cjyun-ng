@@ -9,12 +9,39 @@
           <li nz-menu-item *ngFor="let item of navList">
             <a href="https://{{item.host}}" target="_blank">{{item['short_title']}}</a>
           </li>
-          <li nz-submenu class="user-option">
+          <li nz-submenu [nzOpen]=true>
             <span title><nz-avatar nzSize="large" nzIcon="anticon anticon-user"></nz-avatar></span>
-            <ul>
-              <li nz-menu-item>4</li>
-              <li nz-menu-item>5</li>
-              <li nz-menu-item>6</li>
+            <ul class="user-option">
+              <li nz-menu-item>
+                <div>
+                  <i></i>
+                  <span>个人中心</span>
+                </div>
+              </li>
+              <li nz-menu-item>
+                <div>
+                  <i></i>
+                  <span>修改密码</span>
+                </div>
+              </li>
+              <li nz-menu-item>
+                <div>
+                  <i></i>
+                  <span>意见反馈</span>
+                </div>
+              </li>
+              <li nz-menu-item>
+                <div>
+                  <i></i>
+                  <span>帮助中心</span>
+                </div>
+              </li>
+              <li nz-menu-item>
+                <div>
+                  <i></i>
+                  <span>退出</span>
+                </div>
+              </li>
             </ul>
           </li>
         </ul>
