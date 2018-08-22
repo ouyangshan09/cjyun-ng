@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment';
+import { HomeService } from '../../service/home.service';
 
 interface Config {
   title: string;
@@ -18,10 +18,12 @@ interface Config {
 export class HomeComponent implements OnInit {
   private configs: Array<Config>;
 
-  constructor() { }
+  constructor(
+    private homeService: HomeService
+  ) { }
 
   ngOnInit() {
-    console.log('environment:', environment);
+    //
   }
 
 }
