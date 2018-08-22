@@ -9,7 +9,10 @@
           <li nz-menu-item *ngFor="let item of navList">
             <a href="https://{{item.host}}" target="_blank">{{item['short_title']}}</a>
           </li>
-          <li nz-submenu [nzOpen]=true>
+          <li nz-menu-item>
+            <div>登录</div>
+          </li>
+          <li nz-submenu>
             <span title><nz-avatar nzSize="large" nzIcon="anticon anticon-user"></nz-avatar></span>
             <ul class="user-option">
               <li nz-menu-item>
