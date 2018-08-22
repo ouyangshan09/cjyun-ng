@@ -10,32 +10,33 @@ export const environment = {
     cjyun: {
       title: 'e采云平台',
       short_title: '云平台',
-      api: '',
-      host: '',
+      api: 'test-cjyun-api.ecaicn.com',
+      host: 'starter.oy.ecaicn.comt',
+      port: 80
       // https: '' option
     },
     cjhms: {
       title: 'e采课业系统',
       short_title: '课业系统',
-      api: '',
-      host: ''
+      api: 'test-cjhms-api.ecaicn.com',
+      host: 'test-cjhms.ecaicn.com'
     },
     cjtilis: {
       title: 'e采学情系统',
       short_title: '学情系统',
-      api: '',
-      host: ''
+      api: 'test-cjtlis-api.ecaicn.com',
+      host: 'test-cjtlis.ecaicn.com'
     },
     cjcms: {
       title: 'e采备课系统',
       short_title: '备课系统',
-      api: '',
-      host: ''
+      api: 'test-cjcms-api.ecaicn.com',
+      host: 'test-cjcms.ecaicn.com'
     }
   },
   protocal: 'https',
-  api: 'test-cjyun.ecain.com',
-  host: 'cjyun.oy.ecain.com',
+  api: 'test-cjyun-api.ecaicn.com',
+  host: 'starter.oy.ecaicn.com',
   needLogin: true
 };
 
