@@ -18,6 +18,20 @@
             .logo {
                 float: left;
                 line-height: 60px;
+
+                .skip {
+                    display: block;
+                    width: 136px;
+                    height: 40px;
+                    margin: 11px 0 0;
+                    background-image: url('../../../assets/img/logo-1x.png');
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+
+                    &.hover {
+                        background-image: url('../../../assets/img/logo-hover-1x.png');
+                    }
+                }
             }
 
             .menu {
