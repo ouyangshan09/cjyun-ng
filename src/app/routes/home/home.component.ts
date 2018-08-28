@@ -21,4 +21,7 @@ export class HomeComponent implements OnInit {
     this.navList = this.homeService.getNavigations();
   }
 
+  onMenu(event) {
+    console.log('menu event:', event);
+  }
 }

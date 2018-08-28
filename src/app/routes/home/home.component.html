@@ -5,7 +5,7 @@
         <a class="skip {{logoHover}}" href="/"></a>
       </nav>
       <nav class="menu">
-        <ul nz-menu [nzMode]="'horizontal'">
+        <ul nz-menu [nzMode]="'horizontal'" (nzClick)="onMenu($event)">
           <li nz-menu-item *ngFor="let item of navList">
             <a href="https://{{item.host}}" target="_blank">{{item['short_title']}}</a>
           </li>
