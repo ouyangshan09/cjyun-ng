@@ -1,6 +1,13 @@
+import { Store } from '@ngrx/store';
+import { StoreDevtools } from '@ngrx/store-devtools';
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from '../../service/home.service';
 import { Config } from '../../modules/config.module';
+import { INCREMENT } from '../../reducer/user.reducer';
+
+interface AppState {
+  count: number
+}
 
 @Component({
   selector: 'app-home',
@@ -13,7 +20,9 @@ export class HomeComponent implements OnInit {
   navList: Array<Config> = [];
 
   constructor(
-    private homeService: HomeService
+    private homeService: HomeService,
+    private store: Store<AppState>,
+    private devtools: StoreDevtools
   ) { }
 
   ngOnInit() {
@@ -22,7 +31,7 @@ export class HomeComponent implements OnInit {
 
   onMenu(event) {
     if (event === 'login') {
-      //
+      this.store.dispatch({ type: INCREMENT });
     }
     console.log('menu event:', event);
   }
