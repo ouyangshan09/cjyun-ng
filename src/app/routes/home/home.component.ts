@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from '../../service/home.service';
 import { Config } from '../../modules/config.module';
-import { NzMenuItemDirective } from 'ng-zorro-antd';
-
 
 @Component({
   selector: 'app-home',
@@ -23,6 +21,9 @@ export class HomeComponent implements OnInit {
   }
 
   onMenu(event) {
+    if (event === 'login') {
+      //
+    }
     console.log('menu event:', event);
   }
 }
