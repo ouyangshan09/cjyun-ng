@@ -1,7 +1,13 @@
+import { Store } from '@ngrx/store';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { omit, values } from 'lodash';
 import { Config } from '../modules/config.module';
+import { INCREMENT } from '../reducer/user.reducer';
+
+interface AppState {
+  count: number
+}
 
 /**
  * 主页路由 业务逻辑服务抽象
@@ -17,5 +23,11 @@ export class HomeService {
     return navList;
   }
 
-  constructor() { }
+  public addNumber (): void {
+    this.store.dispatch({type: INCREMENT});
+  }
+
+  constructor(
+    private store: Store<AppState>
+  ) { }
 }

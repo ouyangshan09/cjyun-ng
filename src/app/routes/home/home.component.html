@@ -6,40 +6,40 @@
       </nav>
       <nav class="menu">
         <ul nz-menu [nzMode]="'horizontal'">
-          <li nz-menu-item *ngFor="let item of navList">
+          <li nz-menu-item *ngFor="let item of navList" (click)="onMenu(item)">
             <a href="https://{{item.host}}" target="_blank">{{item['short_title']}}</a>
           </li>
-          <li nz-menu-item>
+          <li nz-menu-item (click)="onMenu('login')">
             <div>登录</div>
           </li>
           <li nz-submenu>
             <span title><nz-avatar nzSize="large" nzIcon="anticon anticon-user"></nz-avatar></span>
             <ul class="user-option">
-              <li nz-menu-item>
+              <li nz-menu-item (click)="onMenu('user')">
                 <div>
                   <i></i>
                   <span>个人中心</span>
                 </div>
               </li>
-              <li nz-menu-item>
+              <li nz-menu-item (click)="onMenu('pd')">
                 <div>
                   <i></i>
                   <span>修改密码</span>
                 </div>
               </li>
-              <li nz-menu-item>
+              <li nz-menu-item (click)="onMenu('feed')">
                 <div>
                   <i></i>
                   <span>意见反馈</span>
                 </div>
               </li>
-              <li nz-menu-item>
+              <li nz-menu-item (click)="onMenu('help')">
                 <div>
                   <i></i>
                   <span>帮助中心</span>
                 </div>
               </li>
-              <li nz-menu-item>
+              <li nz-menu-item (click)="onMenu('exit')">
                 <div>
                   <i></i>
                   <span>退出</span>
