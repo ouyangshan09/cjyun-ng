@@ -37,6 +37,13 @@
             .menu {
                 float: right;
 
+                .user-option {
+                    .oy-item {
+                        color: #128ee9;
+                        font-size: 18px;
+                    }
+                }
+
                 .ant-menu {
                     line-height: 60px;
                     color: #fff;
@@ -62,6 +69,10 @@
                             border-bottom: 2px solid transparent;
                         }
                     }
+                }
+
+                :host /deep/ .oy {
+                    color: rebeccapurple;
                 }
 
                 ::ng-deep {
